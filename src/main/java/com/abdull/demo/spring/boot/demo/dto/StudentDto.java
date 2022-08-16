@@ -3,9 +3,11 @@ package com.abdull.demo.spring.boot.demo.dto;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
+import lombok.Builder;
 import lombok.Data;
 
 @Data
+@Builder
 public class StudentDto {
 
 	@NotBlank(message = "First Name must be not null")
